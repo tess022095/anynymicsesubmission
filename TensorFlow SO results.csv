@@ -1,0 +1,125 @@
+URL,,D1,
+33686464.txt,1,Line 16: concat api arguments are misplaced,
+33711427.txt,2,Line 2: ones api shape should be a list,
+,,Line 1: placeholder variable argument and never fed,
+33762831.txt,0,,
+33785936.txt,3,Line 5: run called without startin session,
+,,Line 9: eval called without starting session,
+,,Line 13: eval called without starting session,
+33997823.txt,2,Line 73: Session started but not closed,
+,,Histogram summary,
+34931121.txt,3,Line 11: InteractiveSession started but not closed,
+,,misuse of eval,
+,,Misuse of run,
+35277898.txt,1,Line 12: InteractiveSession started but never closed,
+35413618.txt,3,Line 23: Session started but not closed,
+,,Misuse of cast,
+,,Misuse of placeholder,
+36080445.txt,2,Line 1: in_top_k arguments are extra,
+,,astype neeeds to be called after loadtxt,
+36210887.txt,2,astype needs to be called following loadtxt,
+37771321.txt,1,conv2d_transpose api,
+38114534.txt,0,,
+38422764.txt,1,Line 19: Session variable started but never closed,
+38829641_v1.txt,3,Session not closed,
+,,Misuse of the placeholder API at line 3 in the code tf.placeholder('float32'),
+,,Misuse of the constant API at line 5 in the code tf.constant(22.0),
+38994037.txt,2,Session not closed,
+,,Misuse of the Variable API at line 14 in the code tf.Variable(0),
+39112176.txt,2,placeholder variable not feed,
+,,placeholder api doesn't use shape,
+39945037.txt,0,,
+42286972.txt,2,Line 1: Misuse of constant api,
+,,Line 2: Misuse of constant api,
+43480732.txt,0,Need to debug. Should be easy fix,
+47065820.txt,2,Line 1: s never fed,
+,,Line 2: img never fed,
+,,,
+,,,
+38626435.txt,3,Misuse of the run API at line 33 in the code tf.app.run(),wrong method
+,,run called without starting the session,Missing method
+,,,method order
+38833934.txt,1,Session not closed,Missing method
+39112176.txt,2,Placeholder variable nott feed,Missing method
+,,tf.initialize_all_variables(),Unknown Method
+39435341.txt,6,"Misuse of the placeholder API at line 2 in the code tf.placeholder('float', [None, n_classes])",Argument
+,,"Misuse of the reduce_mean API at line 5 in the code tf.reduce_mean(tf.cast(correct_prediction, 'float'))",Argument
+,,run called without starting the session,Missing method
+,,Misuse oof placehnolder,argument-single
+,,Misuse of cast API,argument-single
+39462343.txt,2,tf.pack,wrong method
+,,tf.pack,wrong method
+41482913.txt,2,Session not closed,Missing method
+,,Misuse of constant api,Unknown Method
+41918795.txt,2,Misuse of the placeholdr API,Argument
+,,Misuse of the randn api,Unknown Method
+42286972.txt,1,Misuse of the constant API,Argument
+42616625.txt,1,"Misuse of the bidirectional_dynamic_rnn API at line 4 in the code bidirectional_dynamic_rnn(fw_lstm_cell, bw_lstm_cell, x_place, sequence_length=SEQLEN, dtype='float32')",argument-single
+45955241.txt,1,Interactive Session not closed,Missing method
+39945037.txt,2,Misuse of the conv2d api,Argument
+,,Misuse of the conv2d api,Argument
+40320585.txt,1,Misuse of VariableAPI,argument-single
+40430186.txt,1,Misuse of Variable ,argument-single
+40511562.txt,1,Missue of the run API,argument-single
+40956040.txt,1,Misuse of the mean API,argument-single
+42217059.txt,1,Misuse of the placeholder API,wrong method
+42418029.txt,2,Misuse of the cast api,argument-single
+,,tf.nn.softmax_cross_entropy_with_logits,wrong method
+33789485.txt,3,Misuse of variable API,argument-single
+,,Session not closed,Missing method
+,,Misuse of the placeholder api,argument-single
+34289131.txt,2,Misuse of the placeholder API,argument-single
+,,Session not closed,Missing method
+34311893.txt,2,Misuse of the Variable,argument-single
+,,Missue of the Placeholder,argument-single
+34519423.txt,3,Placeholders never fed,Missing method
+,,Placeholders never fed,Missing method
+,,Placeholders never fed,Missing method
+34970582.txt,2,Placeholders not fed,Missing method
+,,Placeholders not fed,Missing method
+35488717.txt,1,Misuse of the conv2d_transpose API,argument-single
+37267584.txt,2,placeholder,argument-single
+,,randn,argument-single
+39015376.txt,2,placeholder variables not fed,Missing method
+39352865.txt,3,placeholder variables not fed,Missing method
+,,placeholder variables not fed,Missing method
+,,Session not closed,Missing method
+33785936.txt,1,Misuse of the . cast API',argument-single
+33684657.txt,1,Misuse of placeholder,argument-single
+34092850.txt,2,misuse of variable,argument-multiple
+,,misuse of constant,argument-multiple
+34223315.txt,2,Misuse of cast api,argument-single
+,,run called without session,Missing method
+35374958.txt,1,Misuse of reshape,argument-single
+36281129.txt,3,constant apis,argument-single
+,,constant apis,argument-single
+,,conv2d api,argument-multiple
+37704362.txt,2,variable api ,argument-single
+,,constant api,argument-single
+38114534.txt,2,reshape api,argument-single
+,,conv2d api,argument-multiple
+38546903.txt,2,reshape api,argument-single
+,,reshape api,argument-single
+40366163.txt,1,softmax called with units  1 in fully conneected,argument-single
+47410778.txt,1,repeat api,wrong method
+33684657.txt,1,Invalid Operation,Missing iteration
+34311893.txt#L61,1,Wrong Value cost,argument-single
+34519423.txt,1,get shape as list,argument-single
+33727935.txt#L2,1,Missing required arguent,method-single
+34223315.txt#L1,1,Missing Method,Missing Method
+37704362.txt,1,Wrong method order,Wrong method order
+40272567.txt#L16,1,Missing parameter,method-single
+40956040.txt,1,,argument-single
+44896288.txt,1,,method-single
+45955241.txt#L34,1,Wrong value,argument-single
+44896288.txt,1,,method-single
+33789485.txt,1,csv reader returing wrong data type,argument-single
+34289131.txt#L42,1,Missing iteration,Missing iteration
+35488717.txt#L16,1,Wrong values,argument-single
+37444951.txt,1,Wrong values,argument-multiple
+39015376.txt,1,Wrong values,argument-multiple
+40275774.txt,1,Wrong type,argument-single
+44418442.txt,1,Wrong value,argument-single
+,,,Missing iteration
+,,,Wrong Method Call
+,,,Type Mismatch
